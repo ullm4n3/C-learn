@@ -2,6 +2,7 @@
 #### Advance work with pointers
 #### Data structures in language C
   * Linked list
-  * Double linked list
+  * Doubly linked list
   * Queue implemented as Linked list
   * Queue implemented as Double linked list
+  * Stack
