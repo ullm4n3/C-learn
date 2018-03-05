@@ -6,26 +6,22 @@
 void bubblesort(int arr[], int size)
 {
     bool swap = false;
-    do
-    {
+    do {
         swap = false;
-        for(int i = 0; i < size; ++i)
-        {
-            if(arr[i] > arr[i + 1])
-            {
+        for(int i = 0; i < size - 1; ++i) {
+            if(arr[i] > arr[i + 1]) {
                 int temp = arr[i];
                 arr[i] = arr[i + 1];
                 arr[i + 1] = temp;
                 swap = true;
             }
         }
-
-    }while(swap == true);
+    }while(swap);
 }
 
 int main()
 {
-    int arr[] = {102,252,669,22,223, -55, -150, 0, 11111};
+    int arr[] = {102,252,669,22,223, -55, -150, 0, 1};
 
     bubblesort(arr, size_array(arr));
 
